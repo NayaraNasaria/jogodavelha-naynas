@@ -8,6 +8,11 @@
     <title>Jogo das Velinhas</title>
   </head>
   <body>
+    <div class="jogador">
+      <p class="message-player" data-message-player></p>
+      <img src="" alt="Avatar" class="avatar" id="avatar" />
+    </div>
+
     <div class="board" data-board>
       <div class="cell" data-cell></div>
       <div class="cell" data-cell></div>
@@ -21,8 +26,10 @@
     </div>
 
     <div class="winning-message" data-winning-message>
-      <p class="winning-message-text">X Venceu!</p>
-      <button class="winning-message-button">Reiniciar</button>
+      <p class="winning-message-text" data-winning-message-text></p>
+      <button class="winning-message-button" data-restart-button>
+        Reiniciar
+      </button>
     </div>
 
     <script src="scripts.js"></script>
